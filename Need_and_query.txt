@@ -1,0 +1,35 @@
+
+Need
+100% responsive (all divice & browser, ex: desktop, laptop, mobile, projector- win, mac,android. 
+Google chrome, firefox, opera, safary, microsoft edge, tor browser etc)
+user freindly
+send welcome & update message,
+show notice (nationalday and 00am birthday, 00pm death from writer ) 
+all Font- solaimanlipi, arial from backend
+all link from backend not online
+
+
+User role- 
+1. Admin- super admin (with otp)
+2. Librarian- see status, take- edit & publish[book info, pdf book & writer] (create by admin)(with otp)
+3. user- edit profile, 2. add writers, 3. add book info, 4. add pdf books, 5. donate (with otp)
+
+Query
+Admin panel
+1. monitoring, search, insert, view, update, delete, report [book info, pdf book, writer info, user info]
+2. message send to subscriber, users from website   
+3. send group mail & message
+4. admin login- profile, logout
+
+
+Form
+Duplicate check of writer,
+Default value of writer image, book image
+null value of birth place, publish date, isbn, 
+
+Show total writers, book info, pdf book, users- active, pending, band.  view & all
+2. life chat (if possible)
+
+
+
+ 
