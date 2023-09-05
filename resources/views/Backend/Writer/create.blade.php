@@ -41,15 +41,14 @@
                         <div class="form-group row">
                             <label for="CountryName" class="col-sm-3 col-form-label">দেশের নাম</label>
                             <div class="col-sm-9">
-                                <select  id="country-dropdown" class="form-control" name="CountryName"> {{old('CountryName')}}
-                                    <option value="">-- Select Country --</option>
-                                    @foreach ($country as $data)
-                                    
-                                    <option value="Bangladesh">
-                                        {{$data->name}}
-                                    </option>
-                                    @endforeach
-                                </select>
+                            <select  id="country-dropdown" class="form-control" name="CountryName"> {{old('CountryName')}}
+                                        <option value="">-- Select Country --</option>
+                                        @foreach ($country as $data)
+                                        <option value="{{$data->id}}">
+                                            {{$data->name}}
+                                        </option>
+                                        @endforeach
+                                    </select>
                                 @error ('CountryName')
                                     <p class="text-danger">{{$message}}</p>
                                 @enderror
@@ -58,7 +57,7 @@
                         <div class="form-group row">
                             <label for="StateName" class="col-sm-3 col-form-label">জেলার নাম</label>
                             <div class="col-sm-9">
-                                <select value="Bogura"  name="StateName" class="form-control">                                    
+                                <select id="state-dropdown" name="StateName" class="form-control">                                    
                                 </select>
                                 @error ('StateName')
                                     <p class="text-danger">{{$message}}</p>
@@ -68,7 +67,7 @@
                         <div class="form-group row">
                             <label for="CityName" class="col-sm-3 col-form-label">উপজেলার নাম</label>
                             <div class="col-sm-9">
-                                <select value="Sherpur"  name="CityName" class="form-control">
+                                <select id="city-dropdown" name="CityName" class="form-control">
                                 </select>
                                 @error ('CityName')
                                     <p class="text-danger">{{$message}}</p>
@@ -160,6 +159,7 @@
     </div>
 
 
+    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script>
         $(document).ready(function () {
